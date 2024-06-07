@@ -46,6 +46,13 @@ We improved the random forest model using hyper parameter tuning where it showed
 We got an accuracy of 94.3% and a best score of 95.4% which improved our model’s ability to predict the probability of a customer to stop using a company’s product due to various reasons.
 
 ## Recommendations
+1. Syriatel should monitor high-usage customers for potential churn triggers and offer special plans or discounts to heavy users to encourage retention.
+2. Improve customer service quality and responsiveness. Track frequent callers and ensure their issues are resolved promptly and satisfactorily.
+3. Introduce attractive evening and off-peak hour plans or discounts to cater to users who predominantly use the service during these times.
+4. Analyze and address state-specific customer behaviors and issues. Customize marketing and retention strategies to cater to regional preferences and needs.
+5. Promote competitive international plans and ensure customers are aware of these options. Offer personalized discounts for frequent international callers.
+
+
 
 
 
