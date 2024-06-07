@@ -1,4 +1,5 @@
-# phase3_project
+# Customer Churn Analysis
+
 
 ## Overview
 The objective of this project is to develop a predictive model to accurately identify customers at risk of churning, using a combination of data preprocessing, feature engineering, and oversampling techniques like SMOTE to address class imbalance.
