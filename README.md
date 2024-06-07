@@ -45,6 +45,17 @@ The confusion matrices also highlight the model performances
 We improved the random forest model using hyper parameter tuning where it showed a significant increase in its accuracy to predict customer churn.
 We got an accuracy of 94.3% and a best score of 95.4% which improved our model’s ability to predict the probability of a customer to stop using a company’s product due to various reasons.
 
+![image](https://github.com/Harry-Atulah/phase3_project/blob/main/Confusion%20matrix.png)
+* The confusion matrix shows that our model has high accuracy (94.01%) and precision (98.41%), indicating that it is effective in predicting non-churn customers and is usually correct when it predicts churn. However, the recall (61.39%) is relatively low, meaning that the model misses a significant number of actual churners. The F1-Score, which balances precision and recall, is 75.56%. To improve the model's performance, especially in identifying more actual churners, further tuning of the model parameters or adjusting the decision threshold might be necessary.
+  
+ ![image](https://github.com/Harry-Atulah/phase3_project/blob/main/Feature%20Importance.png)
+* The bar graph represents the feature importances from the tuned Random Forest model used for predicting customer churn. Each bar corresponds to a different feature from the dataset, with the height indicating the importance of that feature in making predictions.
+* Certain features such as 'total day charge', 'number of voice mail messages', 'total eve charge', 'international plan' and 'state' show higher importance, implying that they have a stronger influence on the model's predictions.
+* This insight helps in understanding which factors are most critical in predicting customer churn, thereby guiding strategic decisions to mitigate churn.
+
+![image](https://github.com/Harry-Atulah/phase3_project/blob/main/ROC%20curve.png)
+* The ROC curve illustrates the model's performance across various threshold levels, with the true positive rate (sensitivity) plotted against the false positive rate (1-specificity). The Area Under the Curve (AUC) is 0.93, indicating a high level of predictive accuracy. An AUC of 0.93 suggests that the model is very effective at distinguishing between customers who churn and those who do not, as a value of 1 represents a perfect model and 0.5 represents a model with no discrimination ability.
+
 ## Recommendations
 1. Syriatel should monitor high-usage customers for potential churn triggers and offer special plans or discounts to heavy users to encourage retention.
 2. Improve customer service quality and responsiveness. Track frequent callers and ensure their issues are resolved promptly and satisfactorily.
