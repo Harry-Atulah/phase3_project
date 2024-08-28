@@ -25,6 +25,36 @@ Next, we conducted visualizations to gain insights into the distribution of key 
 We also performed feature engineering to create new variables or transform existing ones to enhance the predictive power of our models. Additionally, we conducted statistical tests or exploratory data analysis to identify significant factors associated with churn. 
 The data analysis phase aimed to uncover patterns and relationships within the data that could help us better understand customer churn behavior.
 
+### Data Cleaning
+The data preparation process involved preliminary data cleaning to ensure the dataset's quality. The remaining tasks include encoding categorical variables, such as the presence of an international plan, into a numerical format suitable for machine learning models, and addressing class imbalance by applying techniques like SMOTE (Synthetic Minority Over-sampling Technique) to balance the target variable's classes, ensuring the model performs well on both majority and minority classes.
+
+## Visualizations
+### Class imbalance
+![image](https://github.com/Harry-Atulah/phase3_project/blob/main/Images/Class_inbalance.png)
+
+The countplot visualizes the distribution of the target variable "Churn" in the SyriaTel Customer Churn dataset. The plot shows the number of customers who churned (denoted by 'True') and those who did not churn (denoted by 'False'). From the graph, it's evident that the dataset contains more instances of customers who did not churn compared to those who churned. This indicates an imbalance in the dataset
+
+### Distribution of numerical features
+![image](https://github.com/Harry-Atulah/phase3_project/blob/main/Images/distribution%20of%20numerical%20features.png)
+
+Each histogram provides insights into the distribution of a particular numerical feature, showing the frequency of values along the x-axis and the corresponding frequency density along the y-axis. This visualization helps in understanding the range, central tendency, and spread of each numerical feature in the dataset.
+
+### Analyzing the relationship between numerical features and the target variable
+![image](https://github.com/Harry-Atulah/phase3_project/blob/main/Images/numerical%20features%20and%20target%20variable.png)
+
+The plot visualizes the relationship between numerical features and the target variable 'churn' using boxplots. Each subplot represents a different numerical feature, and the boxplot illustrates the distribution of that feature's values across the two categories of the target variable: churn and non-churn. The x-axis denotes the target variable (churn), and the y-axis represents the values of the numerical feature. The boxplot shows the distribution of the feature's values within each category of the target variable, including the median (line inside the box), interquartile range (box), and outliers (points beyond the whiskers). By comparing the boxplots across different numerical features, we can identify potential relationships or differences in the distributions of these features between churn and non-churn groups, which can provide insights into the predictive power of these features for determining churn.
+
+### Pairplot
+![image](https://github.com/Harry-Atulah/phase3_project/blob/main/Images/Pairplot.png)
+
+The pairplot provides a visual overview of the relationships between different numerical features in the dataset. It shows scatter plots for each pair of variables, allowing us to observe potential correlations or patterns. Diagonal elements typically display the distribution of each feature using histograms or kernel density estimates.
+
+### Distribution of Categorical features
+![image](https://github.com/Harry-Atulah/phase3_project/blob/main/Images/categorical%20features.png)
+
+The aforementioned illustrates how categorical attributes, such as state, international plan, and voice mail plan, differ throughout the evaluation variable.
+
+
 ## Modelling
 ### Models Used
 Logistic Regression was the first model that was used. We trained the  Logistic Regression model with a random state of 42, made predictions, and printed out the results. The accuracy of the Logistic Regression model on the test set was printed, followed by the classification report and confusion matrix.
